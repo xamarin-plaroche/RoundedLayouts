@@ -1,13 +1,15 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "RoundedLayouts.Shared", "RoundedLayouts.Shared\RoundedLayouts.Shared.shproj", "{078B9A37-4B56-4FFD-B71A-31D1E4F9A159}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoundedLayouts.iOS", "RoundedLayouts.iOS\RoundedLayouts.iOS.csproj", "{C3071EFB-A618-495B-876E-409A0B946349}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoundedLayouts.Android", "RoundedLayouts.Android\RoundedLayouts.Android.csproj", "{7EECDCE3-83B9-4240-B722-BF9E0057B602}"
 EndProject
-Project("{5DD5E4FA-CB73-4610-85AB-557B54E96AA9}") = "RoundedLayouts.NuGet", "RoundedLayouts.NuGet\RoundedLayouts.NuGet.nuproj", "{3024E38A-62E9-4EE7-A7A2-3E66CF88921B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoundedLayouts.Forms", "RoundedLayouts.Core\RoundedLayouts.Forms.csproj", "{077D8BD3-5CFC-4C15-90E0-5BA54A1B9CC6}"
+EndProject
+Project("{5DD5E4FA-CB73-4610-85AB-557B54E96AA9}") = "RoundedLayouts.NuGet", "RoundedLayouts.NuGet\RoundedLayouts.NuGet.nuproj", "{5128AD76-27C5-4C3F-9BC5-09BD895D69A3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RoundedLayouts", "RoundedLayouts", "{D892A0B9-93FE-4ECF-A05E-A272DC93B72E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,9 +25,13 @@ Global
 		{7EECDCE3-83B9-4240-B722-BF9E0057B602}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7EECDCE3-83B9-4240-B722-BF9E0057B602}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7EECDCE3-83B9-4240-B722-BF9E0057B602}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3024E38A-62E9-4EE7-A7A2-3E66CF88921B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3024E38A-62E9-4EE7-A7A2-3E66CF88921B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3024E38A-62E9-4EE7-A7A2-3E66CF88921B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3024E38A-62E9-4EE7-A7A2-3E66CF88921B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{077D8BD3-5CFC-4C15-90E0-5BA54A1B9CC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{077D8BD3-5CFC-4C15-90E0-5BA54A1B9CC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{077D8BD3-5CFC-4C15-90E0-5BA54A1B9CC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{077D8BD3-5CFC-4C15-90E0-5BA54A1B9CC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5128AD76-27C5-4C3F-9BC5-09BD895D69A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5128AD76-27C5-4C3F-9BC5-09BD895D69A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5128AD76-27C5-4C3F-9BC5-09BD895D69A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5128AD76-27C5-4C3F-9BC5-09BD895D69A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

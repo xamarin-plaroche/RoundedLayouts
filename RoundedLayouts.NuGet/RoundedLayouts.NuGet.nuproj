@@ -4,18 +4,18 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3024E38A-62E9-4EE7-A7A2-3E66CF88921B}</ProjectGuid>
-    <Description>RoundedLayouts</Description>
-    <PackageId>RoundedLayouts</PackageId>
-    <PackageVersion>1.0.0</PackageVersion>
+    <ProjectGuid>{5128AD76-27C5-4C3F-9BC5-09BD895D69A3}</ProjectGuid>
+    <Description>RoundedLayouts.NuGet</Description>
+    <PackageId>RoundedLayouts.NuGet</PackageId>
+    <PackageVersion>1.0.3</PackageVersion>
     <Authors>plaroche</Authors>
     <DevelopmentDependency>false</DevelopmentDependency>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <OutputType>Exe</OutputType>
-    <RootNamespace>RoundedLayouts</RootNamespace>
+    <RootNamespace>RoundedLayouts.NuGet</RootNamespace>
     <UsePartialTypes>false</UsePartialTypes>
     <AssemblyName>RoundedLayouts.NuGet</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -28,22 +28,29 @@
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RoundedLayouts.Android\RoundedLayouts.Android.csproj">
-      <Project>{7EECDCE3-83B9-4240-B722-BF9E0057B602}</Project>
-      <Name>RoundedLayouts.Android</Name>
-      <ReferenceSourceTarget>ProjectReference</ReferenceSourceTarget>
-    </ProjectReference>
-    <ProjectReference Include="..\RoundedLayouts.iOS\RoundedLayouts.iOS.csproj">
-      <Project>{C3071EFB-A618-495B-876E-409A0B946349}</Project>
-      <Name>RoundedLayouts.iOS</Name>
-      <ReferenceSourceTarget>ProjectReference</ReferenceSourceTarget>
-    </ProjectReference>
+    <None Include="readme.txt">
+      <IncludeInPackage>true</IncludeInPackage>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="NuGet.Build.Packaging">
       <Version>0.2.5-dev.8</Version>
       <PrivateAssets>All</PrivateAssets>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RoundedLayouts.Android\RoundedLayouts.Android.csproj">
+      <Project>{7EECDCE3-83B9-4240-B722-BF9E0057B602}</Project>
+      <Name>RoundedLayouts.Android</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RoundedLayouts.Core\RoundedLayouts.Forms.csproj">
+      <Project>{077D8BD3-5CFC-4C15-90E0-5BA54A1B9CC6}</Project>
+      <Name>RoundedLayouts.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RoundedLayouts.iOS\RoundedLayouts.iOS.csproj">
+      <Project>{C3071EFB-A618-495B-876E-409A0B946349}</Project>
+      <Name>RoundedLayouts.iOS</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
   <Import Project="$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets" Condition="Exists('$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets')" />

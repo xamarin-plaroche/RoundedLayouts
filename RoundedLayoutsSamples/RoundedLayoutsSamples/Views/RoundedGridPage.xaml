@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RoundedLayoutsSamples.Views.RoundedGridPage" xmlns:visualelements="clr-namespace:RoundedLayouts.Forms.VisualElements;assembly=RoundedLayouts.Forms">
+    <ScrollView>
+        <StackLayout>
+            <visualelements:RoundedGrid BackgroundColor="Red"
+                                               CornerRadius="20"
+                                               CornersAttributes="AllRounded"
+                                               HeightRequest="200"
+                                               HorizontalOptions="CenterAndExpand"
+                                               VerticalOptions="CenterAndExpand"
+                                               WidthRequest="300">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <Label HorizontalOptions="Center"
+                       Text="0 - 0"
+                       TextColor="White"
+                       VerticalOptions="CenterAndExpand"/>
+                <Label Grid.Column="1" HorizontalOptions="Center"
+                       Text="0 - 1"
+                       TextColor="White"
+                       VerticalOptions="CenterAndExpand"/>
+                <Label Grid.Row="1" Grid.Column="0" HorizontalOptions="Center"
+                       Text="1 - 0"
+                       TextColor="White"
+                       VerticalOptions="CenterAndExpand"/>
+                <Label Grid.Row="1" Grid.Column="1" HorizontalOptions="Center"
+                       Text="1 - 1"
+                       TextColor="White"
+                       VerticalOptions="CenterAndExpand"/>
+            </visualelements:RoundedGrid>
+            <visualelements:RoundedGrid BackgroundColor="Blue"
+                                               CornerRadius="20"
+                                               CornersAttributes="TopRounded"
+                                               HeightRequest="200"
+                                               HorizontalOptions="CenterAndExpand"
+                                               VerticalOptions="CenterAndExpand"
+                                               WidthRequest="300">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <Label HorizontalOptions="Center"
+                       Text="0 - 0"
+                       TextColor="White"
+                       VerticalOptions="CenterAndExpand"/>
+                <Label Grid.Column="1" HorizontalOptions="Center"
+                       Text="0 - 1"
+                       TextColor="White"
+                       VerticalOptions="CenterAndExpand"/>
+                <Label Grid.Row="1" Grid.Column="0" HorizontalOptions="Center"
+                       Text="1 - 0"
+                       TextColor="White"
+                       VerticalOptions="CenterAndExpand"/>
+                <Label Grid.Row="1" Grid.Column="1" HorizontalOptions="Center"
+                       Text="1 - 1"
+                       TextColor="White"
+                       VerticalOptions="CenterAndExpand"/>
+            </visualelements:RoundedGrid>
+            <visualelements:RoundedGrid BackgroundColor="Purple"
+                                               CornerRadius="20"
+                                               CornersAttributes="BottomRightRounded"
+                                               HeightRequest="200"
+                                               HorizontalOptions="CenterAndExpand"
+                                               VerticalOptions="CenterAndExpand"
+                                               WidthRequest="300">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <Label HorizontalOptions="Center"
+                       Text="0 - 0"
+                       TextColor="White"
+                       VerticalOptions="CenterAndExpand"/>
+                <Label Grid.Column="1" HorizontalOptions="Center"
+                       Text="0 - 1"
+                       TextColor="White"
+                       VerticalOptions="CenterAndExpand"/>
+                <Label Grid.Row="1" Grid.Column="0" HorizontalOptions="Center"
+                       Text="1 - 0"
+                       TextColor="White"
+                       VerticalOptions="CenterAndExpand"/>
+                <Label Grid.Row="1" Grid.Column="1" HorizontalOptions="Center"
+                       Text="1 - 1"
+                       TextColor="White"
+                       VerticalOptions="CenterAndExpand"/>
+            </visualelements:RoundedGrid>
+            <visualelements:RoundedGrid BackgroundColor="Green"
+                                               CornerRadius="20"
+                                               CornersAttributes="LeftRounded"
+                                               HeightRequest="200"
+                                               HorizontalOptions="CenterAndExpand"
+                                               VerticalOptions="CenterAndExpand"
+                                               WidthRequest="300">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <Label HorizontalOptions="Center"
+                       Text="0 - 0"
+                       TextColor="White"
+                       VerticalOptions="CenterAndExpand"/>
+                <Label Grid.Column="1" HorizontalOptions="Center"
+                       Text="0 - 1"
+                       TextColor="White"
+                       VerticalOptions="CenterAndExpand"/>
+                <Label Grid.Row="1" Grid.Column="0" HorizontalOptions="Center"
+                       Text="1 - 0"
+                       TextColor="White"
+                       VerticalOptions="CenterAndExpand"/>
+                <Label Grid.Row="1" Grid.Column="1" HorizontalOptions="Center"
+                       Text="1 - 1"
+                       TextColor="White"
+                       VerticalOptions="CenterAndExpand"/>
+            </visualelements:RoundedGrid>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
