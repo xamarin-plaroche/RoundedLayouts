@@ -178,7 +178,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RoundedLayouts.Core\RoundedLayouts.Forms.csproj">
-      <Project>{0131C9AE-3E0A-476B-8B1E-F5BE49EF8B85}</Project>
+      <Project>{077D8BD3-5CFC-4C15-90E0-5BA54A1B9CC6}</Project>
       <Name>RoundedLayouts.Forms</Name>
     </ProjectReference>
   </ItemGroup>
